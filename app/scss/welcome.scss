@@ -1,0 +1,58 @@
+.welcome {
+   display: flex;
+   justify-content: center;
+   &__inner {
+      padding: 136px 0 248px;
+      color: #FFFFFF;
+      max-width: 860px;
+      @media (max-width: 1160px) {
+         padding: 136px 0 180px;
+      }
+      @media (max-width: 960px) {
+         padding: 136px 0 148px;
+      }
+      @media (max-width: 750px) {
+         padding: 60px 0 100px;
+      }
+      @media (max-width: 500px) {
+         padding: 20px 0 50px;
+         text-align: center;
+      }
+      animation-name: animalMainPage;
+      animation-duration: 400ms;
+   }
+
+   &__main-title {
+      margin-bottom: 30px;
+      font-size: 40px;
+      line-height: 139.4%;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.2px;
+   }
+
+   &__main-text {
+      max-width: 776px;
+      margin-bottom: 60px;
+
+      @media (max-width: 500px) {
+         display: none;
+      }
+   }
+
+   &__btn {
+      background-color: #FF9900;
+      padding: 12px;
+      box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.32);
+      color: #FFFFFF;
+      font-weight: 700;
+   }
+}
+
+@keyframes animalMainPage {
+   0% {
+      transform: scale(0.5);
+   }
+   100% {
+      transform: scale(1);
+   }
+}

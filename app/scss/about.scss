@@ -1,0 +1,95 @@
+.about {
+   position: relative;
+   background: url(../../img/cover-page.png) no-repeat;
+   background-position: right 370px;
+   display: flex;
+
+   &__img {
+      height: 100%;
+      position: relative;
+
+      @media (max-width: 750px) {
+         display: none;
+      }
+   }
+   &__img img {
+      width: 100%;
+      
+   }
+   &__experience {
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      transform: translate(-100%, -100%);
+
+      width: 238px;
+      height: 220px;
+      background-color: #FFB800;
+
+      padding: 0px 40px 0 30px;
+   }
+
+   &__experience-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 70px;
+      line-height: 120.4%;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      display: block;
+   }
+
+   &__experience-text {
+      font-size: 30px;
+      line-height: 139.4%;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      display: block;
+   }
+
+   &__inner {
+      padding: 145px 0px 30px;
+      margin: 0px 30px;
+      @media (max-width: 1170px) {
+         padding: 125px 0px 30px;
+      }
+      @media (max-width: 940px) {
+         padding: 50px 0px 30px;
+      }
+      @media (max-width: 870px) {
+         padding: 30px 0px 30px;
+      }
+      @media (max-width: 750px) {
+         margin: 0;
+      }
+   }
+
+   &__description {
+      max-width: 542px;
+      position: relative;
+      z-index: 2;
+   }
+
+   &__title {
+   }
+
+   &__subtitle {
+      margin-bottom: 25px;
+
+      @media (max-width: 870px) {
+         margin-bottom: 15px;
+         font-size: 30px;
+      }
+   }
+
+   &__text {
+      margin-bottom: 30px;
+      color: #7C7C7C;
+
+      @media (max-width: 870px) {
+         font-size: 15px;
+      }
+   }
+   &__text:last-child {
+      margin-bottom: 0px;
+   }
+}

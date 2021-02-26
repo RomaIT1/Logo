@@ -1,0 +1,50 @@
+.header-top {
+   background-color: rgba(0, 0, 0, 0.31);
+
+   &__inner {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 16px 0;
+   }
+   &__contact {
+   }
+   &__number {
+      margin-left: 45px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.015em;
+      color: #FFFFFF;
+
+      @media (max-width: 960px) {
+         margin-left: 20px;
+      }
+   }
+   &__number:first-child {
+      margin-left: 0px;
+
+      @media (max-width: 470px) {
+         display: none;
+      }
+   }
+   &__social {
+      margin-left: 100px;
+
+      @media (max-width: 960px) {
+         margin-left: 30px;
+      }
+   }
+   &__account-link {
+      margin-left: 22px;
+
+      @media (max-width: 960px) {
+         margin-left: 10px;
+      }
+   }
+   &__account-link:first-child {
+      margin-left: 0px;
+   }
+   &__account-img {
+   }
+}

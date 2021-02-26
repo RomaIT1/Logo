@@ -1,0 +1,12 @@
+.visible {
+   transform: translate(-200%, 0);
+   opacity: 1;
+}
+
+.animal {
+   transition-duration: 800ms;
+
+   @media (max-width: 570px) {
+      transition-duration: 500ms;
+   }
+}

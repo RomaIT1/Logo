@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Document</title>
+</head>
+<body> 
+   <div class="wrapper" id='app'>
+      <div class="welcome-page">
+         <header class="welcome-page__header header">
+            <div class="header__top header-top"> 
+               <div class="container"> 
+                  <div class="header-top__inner">
+                     <div class="header-top__contact">
+                        <a href="tel:380674673767" class="header-top__number">+38 (067) 467-37-67</a>
+                        <a href="tel:380674673767" class="header-top__number">+38 (067) 467-37-67</a>
+                     </div>
+                     <div class="header-top__social">  
+                        <a href="#" class="header-top__account-link">
+                           <img class="header-top__account-img" src="img/header/soc-1.svg" alt="">
+                        </a>    
+                        <a href="#" class="header-top__account-link">
+                           <img class="header-top__account-img" src="img/header/soc-2.svg" alt="">
+                        </a>    
+                        <a href="#" class="header-top__account-link">
+                           <img class="header-top__account-img" src="img/header/soc-3.svg" alt="">
+                        </a>             
+                     </div> 
+                  </div>
+               </div>                     
+            </div>
+            <div class="header__main header-main" :style='{background: headerBackground}'>
+               <div class="container">
+                  <div class="header-main__inner">
+                     <div class="header-main__logo logo">
+                        <a href="" class="logo__link">
+                           <img class="logo__img" src="img/logo/logo.svg" alt="">
+                        </a>
+                     </div>
+                     <nav class="header-main__nav nav">
+                        <ul class="nav__items" :style='{left: burgerLeft}'>
+                           <li class="nav__item">
+                              <a class="nav__link" href="#">Про нас</a>
+                           </li>
+                           <li class="nav__item">
+                              <a class="nav__link" href="#">Відгуки</a>
+                           </li>
+                           <li class="nav__item">
+                              <a class="nav__link" href="#">Ціни</a>
+                           </li>
+                           <li class="nav__item">
+                              <a class="nav__link" href="#">Наші роботи</a>
+                           </li>
+                           <li class="nav__item">
+                              <a class="nav__link" href="#">Контакти</a>
+                           </li>
+                        </ul>
+                        <div class="nav__burger" @click = 'openMenu'>
+                           <div class="nav__burger-line"></div>
+                           <div class="nav__burger-line"></div>
+                           <div class="nav__burger-line"></div>
+                        </div>
+                     </nav>
+                     <div class="header-main__call-btn">
+                        <a class="header-main__call-link" href="#">Замовити дзвінок</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-main__progress"></div>
+            </div>
+         </header>
+         <article class="welcome-page__welcome welcome">
+            <div class="container">
+               <div class="welcome__inner">
+                  <h1 class="welcome__main-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                  <p class="welcome__main-text text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. 
+                  </p>
+                  <a class="welcome__btn" href="#">Залишити заявку</a>
+               </div>
+            </div>
+         </article>
+         <div class="welcome-page__advantages advantages">
+            <div class="container">
+               <div class="advantages__inner">
+                  <div class="advantages__column">
+                     <div class="advantages__text">
+                        <span>Фіксований кошторис</span>
+                     </div>
+                     <div class="advantages__img-wrap advantages__img-wrap--1">
+                        <img class="advantages__img" src="img/advantages/ico-1.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__text">
+                        <span>Працюємо без авансів</span>
+                     </div>
+                     <div class="advantages__img-wrap advantages__img-wrap--2">
+                        <img class="advantages__img" src="img/advantages/ico-2.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__text">
+                        <span>Щотижнева звітність робочого процесу</span>
+                     </div>
+                     <div class="advantages__img-wrap advantages__img-wrap--3">
+                        <img class="advantages__img" src="img/advantages/ico-3.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__text advantages__text--4">
+                        <span>Здача роботи у зазначені терміни</span>
+                     </div>
+                     <div class="advantages__img-wrap advantages__img-wrap--4">
+                        <img class="advantages__img" src="img/advantages/ico-4.svg" alt="">
+                     </div>
+                  </div>
+                  <div class="advantages__column">
+                     <div class="advantages__text">
+                        <span>Гарантія на роботи</span>
+                     </div>
+                     <div class="advantages__img-wrap advantages__img-wrap--5">
+                        <img class="advantages__img" src="img/advantages/ico-5.svg" alt=''>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <main class="main-page">
+         <section class="main-page__about about animal">     
+            <div class="about__img">
+               <img src="img/about/img-1.jpg" alt="">
+               <div class="about__experience">
+                  <span class="about__experience-num">10+</span>
+                  <span class="about__experience-text">Років досвіду</span>
+               </div>
+            </div>
+            <div class="_container">
+               <div class="about__inner">
+                  <div class="about__description">
+                     <h3 class="about__title title">Про нас</h3>
+                     <h2 class="about__subtitle subtitle">Хто ми такі?</h2>
+                     <p class="about__text text text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin consequat mauris augue, id suscipit risus mattis non. Sed a vulputate diam.
+                     </p>
+                     <p class="about__text text">
+                        Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed sem egestas hendrerit at vel quam. Vestibulum maximus velit dui. 
+                     </p>
+                  </div>
+               </div> 
+            </div>        
+         </section>
+         <section class="main-page__stages stages">
+            <div class="_container">
+               <div class="stages__inner">
+                  <h2 class="stages__title title">етапи роботи</h2>
+                  <h3 class="stages__subtitle subtitle">Як ми працюємо?</h3>
+                  <div class="stages__content animal">
+                     <div class="stages__line"></div>
+                     <div class="stages__column">
+                        <div class="stages__item">
+                           <div class="stages__indicator">
+                              <img class="stages__progress stages__progress--first" src="img/stages/p-1.svg" alt="">
+                              <span>1</span> 
+                           </div>
+                           <p class="stages__item-text text">
+                              Виїзд майстра на обєкт для замірів
+                           </p>
+                        </div>
+                        <div class="stages__item">
+                           <div class="stages__indicator">
+                              <img class="stages__progress" src="img/stages/p-2.svg" alt="">
+                              <span>2</span> 
+                           </div>
+                           <p class="stages__item-text text stages__item-text--3">
+                              Складання кошторису згідно попередніх домовлень
+                           </p>
+                        </div>
+                        <div class="stages__item">
+                           <div class="stages__indicator">
+                              <img class="stages__progress stages__progress--three" src="img/stages/p-3.svg" alt="">
+                              <span>3</span> 
+                           </div>
+                           <p class="stages__item-text text">
+                              Підписання договору
+                           </p> 
+                        </div> 
+                        <div class="stages__item">
+                           <div class="stages__indicator">
+                              <img class="stages__progress" src="img/stages/p-4.svg" alt="">
+                              <span>4</span> 
+                           </div> 
+                           <p class="stages__item-text text">
+                              Закупівля матеріалу
+                           </p>
+                        </div>
+                        <div class="stages__item">
+                           <div class="stages__indicator">
+                              <img class="stages__progress" src="img/stages/p-5.svg" alt="">
+                              <span>5</span> 
+                           </div>
+                           <p class="stages__item-text stages__item-text---squeeze text">
+                              Вчасна здача проекту
+                           </p> 
+                        </div>
+                        <div class="stages__item">
+                           <div class="stages__indicator">
+                              <img class="stages__progress" src="img/stages/p-6.svg" alt="">
+                              <span>6</span> 
+                           </div> 
+                           <p class="stages__item-text stages__item-text--first text">
+                              Щасливі замовники
+                           </p> 
+                        </div>  
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="main-page__portfolio portfolio">
+            <h2 class="portfolio__title title">Портфоліо</h2>
+            <h3 class="portfolio__subtitle subtitle">Наші роботи</h3>
+
+            <div class="portfolio__slider-container swiper-container animal">
+               <div class="portfolio__slider-wrapper swiper-wrapper">
+                  <div class="portfolio__slide swiper-slide">
+                     <article class="portfolio__info">
+                        <div class="_container">
+                           <div class="portfolio__info-inner">
+                              <div class="portfolio__info-title">Назва проекта</div>
+                              <p class="portfolio__info-text text">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. 
+                              </p>
+                              <div class="portfolio__info-date">
+                                 <span class='text'>Термін ремонта:</span>
+                                 <span class='text'>21 день</span>
+                              </div>
+                              <div class="portfolio__info-area">
+                                 <span class='text'>Площа:</span>
+                                 <span class='text'>81 м2</span>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+                     <div class="portfolio__work">
+                        <div class="portfolio__work-aside">
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-1.jpg" alt=''>
+                           </div>
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-2.jpg" alt="">
+                           </div>
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-3.jpg" alt="">
+                           </div>
+                        </div>
+                        <div class="portfolio__work-visible">
+                           <div class="portfolio__work-main">
+                              <img src="img/portfolio/img-4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="portfolio__slide swiper-slide">
+                     <article class="portfolio__info">
+                        <div class="_container">
+                           <div class="portfolio__info-inner">
+                              <div class="portfolio__info-title">Назва проекта</div>
+                              <p class="portfolio__info-text text">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. 
+                              </p>
+                              <div class="portfolio__info-date">
+                                 <span class='text'>Термін ремонта:</span>
+                                 <span class='text'>21 день</span>
+                              </div>
+                              <div class="portfolio__info-area">
+                                 <span class='text'>Площа:</span>
+                                 <span class='text'>81 м2</span>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+                     <div class="portfolio__work">
+                        <div class="portfolio__work-aside">
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-1.jpg" alt=''>
+                           </div>
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-2.jpg" alt="">
+                           </div>
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-3.jpg" alt="">
+                           </div>
+                        </div>
+                        <div class="portfolio__work-visible">
+                           <div class="portfolio__work-main">
+                              <img src="img/portfolio/img-4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="portfolio__slide swiper-slide">
+                     <article class="portfolio__info">
+                        <div class="_container">
+                           <div class="portfolio__info-inner">
+                              <div class="portfolio__info-title">Назва проекта</div>
+                              <p class="portfolio__info-text text">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. 
+                              </p>
+                              <div class="portfolio__info-date">
+                                 <span class='text'>Термін ремонта:</span>
+                                 <span class='text'>21 день</span>
+                              </div>
+                              <div class="portfolio__info-area">
+                                 <span class='text'>Площа:</span>
+                                 <span class='text'>81 м2</span>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+                     <div class="portfolio__work">
+                        <div class="portfolio__work-aside">
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-1.jpg" alt=''>
+                           </div>
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-2.jpg" alt="">
+                           </div>
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-3.jpg" alt="">
+                           </div>
+                        </div>
+                        <div class="portfolio__work-visible">
+                           <div class="portfolio__work-main">
+                              <img src="img/portfolio/img-4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="portfolio__slide swiper-slide">
+                     <article class="portfolio__info">
+                        <div class="_container">
+                           <div class="portfolio__info-inner">
+                              <div class="portfolio__info-title">Назва проекта</div>
+                              <p class="portfolio__info-text text">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. 
+                              </p>
+                              <div class="portfolio__info-date">
+                                 <span class='text'>Термін ремонта:</span>
+                                 <span class='text'>21 день</span>
+                              </div>
+                              <div class="portfolio__info-area">
+                                 <span class='text'>Площа:</span>
+                                 <span class='text'>81 м2</span>
+                              </div>
+                           </div>
+                        </div>
+                     </article>
+                     <div class="portfolio__work">
+                        <div class="portfolio__work-aside">
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-1.jpg" alt=''>
+                           </div>
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-2.jpg" alt="">
+                           </div>
+                           <div class="portfolio__work-item">
+                              <img src="img/portfolio/img-3.jpg" alt="">
+                           </div>
+                        </div>
+                        <div class="portfolio__work-visible">
+                           <div class="portfolio__work-main">
+                              <img src="img/portfolio/img-4.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="portfolio__slider-active">
+                  <div class="portfolio__slider-pagination swiper-pagination"></div>     
+                  <div class="portfolio__slider-path">
+                     <div class="portfolio__slider-button swiper-button-prev">
+                        <img src="img/portfolio/prev.svg" alt="">
+                     </div>
+                     <div class="portfolio__slider-button swiper-button-next">
+                        <img src="img/portfolio/next.svg" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="main-page__reviews reviews">
+            <div class="container">
+               <div class="reviews__inner">
+                  <div class="reviews__content">
+                     <h2 class="reviews__title title">Відгуки</h2>
+                     <h3 class="reviews__subtitle subtitle">Що про нас говорять наші клієнти</h3>
+                     <div class="reviews__slider-container swiper-container animal">
+                        <div class="reviews__slider-wrapper swiper-wrapper">
+                           <div class="reviews__slide swiper-slide">
+                              <p class="reviews__quotes">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. 
+                              </p>
+                              <div class="reviews__client-name">
+                                 <span>Елена Филонова, Львів</span>
+                              </div>
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <p class="reviews__quotes">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. 
+                              </p>
+                              <div class="reviews__client-name">
+                                 <span>Елена Филонова, Львів</span>
+                              </div>
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <p class="reviews__quotes">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. 
+                              </p>
+                              <div class="reviews__client-name">
+                                 <span>Елена Филонова, Львів</span>
+                              </div>
+                           </div>
+                           <div class="reviews__slide swiper-slide">
+                              <p class="reviews__quotes">
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut eros at nunc venenatis varius ac ut nisl. Cras vulputate efficitur ligula, ac bibendum est placerat vel. Integer sit amet lectus non enim maximus varius sed non arcu. 
+                              </p>
+                              <div class="reviews__client-name">
+                                 <span>Елена Филонова, Львів</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="reviews__slide-active">
+                           <div class="reviews__slider-button swiper-button-prev">
+                              <img src="img/portfolio/prev.svg" alt="">
+                           </div>
+                           <div class="reviews__pagination swiper-pagination"></div>
+                           <div class="reviews__slider-button swiper-button-next">
+                              <img src="img/portfolio/next.svg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="main-page__form form animal">
+            <div class="container">
+               <div class="form__inner">
+                  <div class="form__content">
+                     <h2 class="form__title">Зв'яжіться з нами</h2>
+                     <h3 class="form__subtitle">Залиште номер телефону, і ми зв'яжемося з вами на протязі 5 хвилин.</h3>
+                     <form class="form__actions">
+                        <div class="form__data">
+                           <input class='form__field form__name' type="text" placeholder="Ім'я">
+                           <input class='form__field form__email' placeholder="E-mail">
+                        </div>
+                        <div class="form__message">
+                           <textarea class='form__field' placeholder="Ваше повідомлення"></textarea>
+                        </div>
+                        <button class="form__button" type="submit">Надіслати</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__main footer-main">
+            <div class="_container">
+               <div class="footer-main__inner">
+                  <div class="footer-main__column footer-main__brand">
+                     <div class="footer-main__logo logo">
+                        <a href="" class="logo__link">
+                           <img class="logo__img" src="img/logo/logo.svg" alt="">
+                        </a>
+                     </div>
+                     <p class="footer-main__text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                     </p>
+                  </div>
+                  <nav class="footer-main__column footer-main__nav">
+                     <ul class="footer-main__items">
+                        <li class="footer-main__item footer-main__text">
+                           <a class="footer-main__link" href="#">Про нас</a>
+                        </li>
+                        <li class="footer-main__item footer-main__text">
+                           <a class="footer-main__link" href="#">Портфоліо</a>
+                        </li>
+                        <li class="footer-main__item footer-main__text">
+                           <a class="footer-main__link" href="#">Етапи роботи</a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <div class="footer-main__column footer-main__location">
+                     <div class="footer-main__place footer-main__text">
+                        <span class="footer-main__country">
+                           <span class='footer-main__country--selection'>Україна </span>
+                           <span class="footer-main__city">м.Львів</span>
+                        </span>
+                        <span class='footer-main__adress'>вул. Зелена 230</span>
+                     </div>
+                     <div class="footer-main__number">
+                        <a class="footer-main__number-link" href="tel:380978577047">(097)857-70-47</a>
+                     </div>
+                  </div>
+                  <div class="footer-main__column footer-main__social">
+                     <a href="#" class="footer-main__account-link">
+                        <img class="footer-main__account-img" src="img/header/soc-1.svg" alt="">
+                     </a>    
+                     <a href="#" class="footer-main__account-link">
+                        <img class="footer-main__account-img" src="img/header/soc-2.svg" alt="">
+                     </a>    
+                     <a href="#" class="footer-main__account-link">
+                        <img class="footer-main__account-img" src="img/header/soc-3.svg" alt="">
+                     </a>             
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__copyright footer-copyright">
+            <div class="_container">
+               <div class="footer-copyright__inner">
+                  <span>2020 © Come Back Agency. All Rights Reserved.</span>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="https://unpkg.com/vue@next"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="js/main.min.js"></script>
+</body>
+</html>

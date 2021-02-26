@@ -1,0 +1,100 @@
+.footer {
+
+   &__main {
+   }
+}
+.footer-main {
+   background-color: rgba(0, 0, 0, 1);
+   border-bottom: 0.5px solid rgba(255, 255, 255, 0.29);
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+
+      padding: 120px 0 95px;
+
+      @media (max-width: 960px) {
+         padding: 90px 0 80px;
+      }
+      @media (max-width: 740px) {
+         padding: 50px 0 40px;
+      }
+      @media (max-width: 510px) {
+         padding: 30px 0 20px;
+      }
+   }
+   &__brand {
+      width: 305px;
+   }
+   &__column {
+   }
+
+   &__logo {
+      margin-bottom: 20px;
+   }
+
+   &__text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: -0.7px;
+      color: #FFFFFF;
+   }
+
+   &__nav {
+      @media (max-width: 740px) {
+         display: none;
+      }
+   }
+
+   &__items {
+   }
+
+   &__item {
+      margin-bottom: 20px;
+   }
+   &__item:last-child {
+      margin-bottom: 0px;
+   }
+   &__link {
+      color: #FFFFFF;
+   }
+   &__location {
+      @media (max-width: 510px) {
+         display: none;
+      }
+   }
+   &__place {
+      margin-bottom: 40px;
+   }
+   &__adress {
+      display: block;
+   }
+
+   &__country {
+      display: block;
+   }
+   &__country--selection {
+      font-weight: 700;
+   }
+   &__number-link {
+      color: #FFFFFF;
+   }
+   &__social {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+   }
+   &__account-link {
+      margin-bottom: 22px;
+      opacity: 0.2;
+   }
+}
+.footer-copyright {
+   background-color: rgba(0, 0, 0, 1);
+   padding: 14px 0;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.005em;
+   color: rgba(255, 255, 255, 0.29);
+}
+

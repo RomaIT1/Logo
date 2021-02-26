@@ -1,0 +1,122 @@
+.header-main {
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 20;
+   transition-duration: 300ms;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+   }
+   &__logo {
+   }
+
+   &__nav {
+      @media (max-width: 960px) {
+         order: 2;
+      }
+   }
+
+   &__call-btn {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.015em;
+      border: 2px solid #FF9900;
+
+      @media (max-width: 960px) {
+         order: 1;
+      }
+   }
+
+   &__call-link {
+      color: #FF9900;
+      padding: 8px 12px;
+      transition-duration: 100ms;
+   }
+   &__call-link:hover {
+      background: #FF9900;
+      color: #FFFFFF;
+      box-shadow: 0 0 3px #FFFFFF;
+   }
+   &__progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 6px;
+      background-color: #FF9900;
+   }
+}
+.logo {
+   &__link {
+
+   }
+   &__img {
+   }
+}
+.nav {
+   display: flex;
+   align-items: center;
+   &__items {
+      display: flex;
+      transition-duration: 300ms;
+      @media (max-width: 960px) {
+         position: absolute;
+         top: 100%;
+         padding: 10px 0 5px 10px;
+         z-index: 1;
+         width: 100%;
+         flex-direction: column;
+         background-color: rgba(0, 0, 0, 0.8);
+         overflow: auto;
+      }
+   }
+
+   &__item {
+      line-height: 25px;
+      margin-left: 64px;
+
+      @media (max-width: 1160px) {
+         margin-left: 30px;
+      }
+      @media (max-width: 960px) {
+         margin-left: 0px;
+         margin-bottom: 10px;
+      }
+   }
+   &__item:first-child {
+      margin-left: 0px;
+   }
+   &__link {
+      font-size: 18px;
+      letter-spacing: 0.07em;
+      color: #FFFFFF;
+      transition-duration: 100ms;
+      padding-bottom: 1px;
+   }
+   &__link:hover {
+      border-bottom: 2px solid #FF9900;
+      color: #FF9900;
+   }
+   &__burger {
+      display: none;
+      cursor: pointer;
+      @media (max-width: 960px) {
+         display: block;
+      }
+   }
+   &__burger-line {
+      margin-bottom: 10px;
+      width: 50px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.8);
+   }
+   &__burger-line:last-child {
+      margin-bottom: 0px;
+   }
+}
+

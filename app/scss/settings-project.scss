@@ -1,0 +1,32 @@
+//Обнуляющие стили--------------------------------------------------------------
+@import 'null-style.scss';
+
+//Шрифты--------------------------------------------------------------
+@import 'fonts.scss';
+
+//Переменные--------------------------------------------------------------
+$container: 1280px;
+$_container: 1120px;
+$font-f: 'gilroy';
+//Миксины--------------------------------------------------------------
+
+//Оболочки--------------------------------------------------------------
+body {
+   font-family: $font-f;
+   font-weight: 400;
+}
+.wrapper {
+   max-width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+}
+.container {
+   max-width: $container + 20;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+._container {
+   max-width: $_container + 20;
+   margin: 0 auto;
+   padding: 0 20px;
+}
